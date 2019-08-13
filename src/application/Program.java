@@ -24,7 +24,8 @@ public class Program {
 		set.add("Notebook");
 		
 		
-		System.out.println(set.contains("Notebook"));
+		//set.removeIf(x -> x.length() >= 3);//REMOVE TODO MUNDO QUE TEM MAIS DE 3 CARACTERES
+		set.removeIf(x -> x.charAt(0) == 'T');//REMOVE TODO MUNDO QUE COMEÇA COM A LETRA T
 		
 		for(String p : set) {
 			System.out.println(p);
